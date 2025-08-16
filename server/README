@@ -1,0 +1,32 @@
+## Technology Stack
+
+`Runtime`: Node.js (v20.19.4+)
+`Framework`: Express.js (v4.18.2)
+`Database`: MongoDB (v7.0+)
+`ODM`: Mongoose
+`Environment`: dotenv
+`CORS`: cors middleware
+
+## Clone the repository (or navigate to server directory):
+`cd server`
+
+## Install dependencies:
+`npm install`
+
+## Fix Express version (if needed):
+`bashnpm uninstall express`
+`npm install express@^4.18.2`
+
+## Environment Configuration:
+Create a .env file in the server directory:
+PORT=3001
+MONGO_URI=mongodb://127.0.0.1:27017/weatherDB
+
+## Start MongoDB (if not already running):
+`bashbrew services start mongodb-community`
+
+## Start the server:
+
+`node server.js`
+
+
