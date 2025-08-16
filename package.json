@@ -1,0 +1,18 @@
+{
+  "name": "weather-forecast-app",
+  "version": "1.0.0",
+  "description": "Weather forecast app with React frontend and Express backend",
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+    "start": "cd server && node server.js",
+    "dev": "concurrently \"cd client && npm start\" \"cd server && node server.js\"",
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install"
+  },
+  "engines": {
+    "node": ">=20.19.4"
+  },
+  "keywords": ["weather", "react", "express", "mongodb"],
+  "author": "Navreet Kaur",
+  "license": "MIT"
+}
