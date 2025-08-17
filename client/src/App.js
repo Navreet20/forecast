@@ -7,8 +7,6 @@ import CurrentWeather from './components/CurrentWeather';
 import Forecast from './components/Forecast';
 import Loading from './components/Loading';
 import WeatherBackground from './components/WeatherBackground';
-import ManualQueryForm from './components/ManualQueryForm';
-import UpdateQueryModal from './components/UpdateQueryModal';
 import InfoModal from './components/InfoModal';
 import './App.css';
 
@@ -27,8 +25,6 @@ const App = () => {
   const [lastCoords, setLastCoords] = useState(null);
   const [savedQueries, setSavedQueries] = useState([]);
   const [loadingQueries, setLoadingQueries] = useState(false);
-  const [showManualForm, setShowManualForm] = useState(false);
-  const [updateModal, setUpdateModal] = useState({ isOpen: false, query: null });
   const [showInfo, setShowInfo] = useState(false);
 
   const fetchSavedQueries = async () => {
