@@ -2,6 +2,7 @@
   "name": "weather-forecast-app",
   "version": "1.0.0",
   "description": "Weather forecast app with React frontend and Express backend",
+  "type": "module",
   "scripts": {
     "build": "cd client && npm install && npm run build",
     "start": "cd server && node server.js",
@@ -14,5 +15,12 @@
   },
   "keywords": ["weather", "react", "express", "mongodb"],
   "author": "Navreet Kaur",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2",
+    "mongoose": "^8.17.1"
+  }
 }
